@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title> 
+    <style>
+        div#res {
+            padding-top: 20px ;
+        }
+        body {
+            background-color: rgba(0, 0, 31, 0.877);
+        }
+        h1, div {
+            color: white;
+        }     
+    </style>
+</head>
+<body >
+    <h1>Somando Valores com <strong>DOM</strong></h1>
+
+    <input type="number" name="txt1" id="txt1"> +
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Somar" onclick="somar()"> <!--No button colocamos uma tag onclick, que diz que quando clicar irá rodar o valor "soma()", que faz referencia a função criada em JS.-->
+    <div id="res">Resultado</div>
+
+<script>
+    function somar(){//criamos a função somar
+
+            var tn1 = document.getElementById('txt1')//criado para fazer a ligação com a caixa do HTML
+            var tn2 = document.getElementById('txt2')
+            var res = document.getElementById('res')
+
+            var n1 = Number(tn1.value)//OBS:.. "tn1" faz referencia a variavel criada para "txt1". n1 será convertido de STRING (tn1) para NUMBER
+            var n2 = Number(tn2.value)
+
+            var soma = n1 + n2 //a variavel soma vai somar n1 e n2
+
+            res.innerHTML = `A soma de ${n1} mais ${n2} é <strong>${soma}</strong>`//res faz referencia a div criada com esse ID. InnerHTML irá jogar na tela o texto em crases
+    }
+</script>
+</body>
+</html>

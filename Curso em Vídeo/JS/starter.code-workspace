@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "starter",
+			"path": ".."
+		},
+		{
+			"name": "curriculo em CSS",
+			"path": "../../Desktop/curriculo em CSS"
+		},
+		{
+			"name": "Modelo de Site",
+			"path": "../../Desktop/Modelo de Site"
+		},
+		{
+			"path": "../../Desktop/Scripts"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "curriculo em CSS"
+	}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./02 - exercicio.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+       <h1>Verifique sua Idade</h1>
+    </header>
+
+ <section>
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="Ano" id="Ano">
+            </p>
+        
+         <p>Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+         <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado.
+        </div>
+ </section>
+<footer>
+    <p>&copy;Fabricio Martins</p>
+</footer>
+
+    <script src="./02 - exercicio.js"></script>
+</body>
+</html>

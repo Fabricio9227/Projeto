@@ -1,0 +1,51 @@
+<table>
+
+    <caption>Produzidos X Vendidos por Loja</caption>
+     <!--caption especifica a legenda (ou título) de uma tabela-->
+
+     <colgroup> <!--sempre colocado depois do caption, ele irá colocar uma cor nas colunas-->
+          <col>
+          <col span="2" style="background-color: brown;">
+          <col span="2" style="background-color: darkblue;">
+     </colgroup>
+
+    <thead> 
+        <!--O marcador <THEAD></THEAD> ou linha de  cabeçalho de uma tabela HTML, é utilizado para destacar os títulos das colunas de uma tabela-->
+        <tr>
+           <th rowspan="2"></th>
+           <th colspan="2" scope="col">Fruteira do Darci</th>
+           <th colspan="2" scope="col">Padaria do Dário</th>
+          
+
+        </tr>
+             <!-- colspan especifica o número de colunas de uma tabela a serem ocupados por uma célula-->
+
+             <!--rowspan especifica o numero de linhas a serem ocupados na tabela-->
+       <tr>
+
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+
+       </tr>
+   </thead>
+
+   <tbody>
+     <tr>
+         <th>Maça</th>
+         <td>15</td>
+         <td>10</td>
+         <td>30</td>
+         <td>25</td>
+     </tr>
+     <tr>
+         <th>Uva</th>
+         <td>20</td>
+         <td>15</td>
+         <td>10</td>
+         <td>8</td>
+         </tr>
+   </tbody>
+
+</table>

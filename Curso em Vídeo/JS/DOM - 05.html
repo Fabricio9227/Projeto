@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div id="titulo">
+        <h1>Aprendendo a utilizar o DOM</h1>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ipsa ipsum</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum necessitatibus quas pariatur provident</p>
+
+    <style>
+        body {
+            background-color: rgba(43, 128, 226, 0.589);
+        }
+        p {
+            color: aliceblue;
+        }
+
+        h1 {
+            color: black;
+        }
+    </style>
+<script>
+    var p1 = document.getElementsByName('p')[1]//'document' se trata do documento HTML, 'getElementsByName' significa que ele irá caçar no HTML o elemento que está em parenteses, no caso "p". O que esta em colchetes é a posição do elemento. No caso, posição 1 pois ele é a repetição da primeira tag p 
+
+
+    var t = document.getElementById('titulo')//aqui eles vai fazer o mesmo processo, mas diferentemente do "getelementsbyname", ele irá pegar por um unico ID, sendo assim, não usamos os colchetes.
+
+
+    t.style.color - 'black'//setando uma style pelo nome da variavel, no caso "t" (tag h1 do HTML)
+
+
+    t.innerHTML  = "Agora está sendo controlada pelo JavaScript"//pedindo para o JS mostrar uma nova mensagem de texto, pela variavel "t", usando o comando "innerHTML"
+
+
+    document.write(p1.innerHTML)//através desses comandos, é reexibido no HTML a mensagem da variavel "p1", na posição [1], conforme especificado na variavel
+
+
+    var t = document.querySelector('div.titulo')//Através do querySelector podemos fazer o mesmo comando dos outros, a diferença é que ele é mais pratico. O "." se usa por conta de ser uma classe, como no CSS, usamos o "." se fosse um ID, por exemplo, usariamos o "#" "
+
+    //MANEIRAS DE ACESSAR O HTML NO JAVASCRIPT USANDO O "DOM" (Document Object Model)
+    
+    //Por ID (getElementById)
+    //Por Nome (getElementsByName)
+    //Por Tag (getElementsByTagName)
+    //Por ClassName (getElementsByClassName)
+    //Por querySelector (querySelector(tag.'nome do elemento'))
+</script>
+
+
+
+
+</body>
+</html>

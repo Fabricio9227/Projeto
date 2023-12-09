@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var nome = window.prompt("Qual seu nome?")
+    document.write(`Olá, ${nome} seu nome tem ${nome.length} letras.`) //Length mostra a quantidade de strings da variável criada
+    document.write(`Seu ${nome} em maiúsculo fica assim ${nome.toUpperCase}`) //toUpperCase deixa tudo em maiusculo quando usado com a variável criada
+    document.write(`Seu ${nome} em minisculas fica assim ${nome.toLowerCase}`)//toLowerCase ""  ""  ""  ""
+
+
+    var n1 = 1476.5
+    n1.toFixed(2)//acrescenta um decimal no final do numero
+    n1.toFixed(2).replace('.',',')//troca o . por ,
+    n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})//Converte o valor da variavel n1 para real brasileiro
+
+    
+</script>
+
+</body>
+</html>
